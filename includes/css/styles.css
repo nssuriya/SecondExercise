@@ -3,20 +3,36 @@
 My Custom CSS
 =============
 
-Author:  Brad Hussey
-Updated: August 2013
-Notes:	 Hand coded for Udemy.com
+Author:  Suriya
+Updated: December 2015
+
+1.Layout
+2.Tyoography
+3.NavBar
+4.Carousel
+5.Global Styles
+6.Media Queries
 
 */
 
 
 /* --------------------------------------
-   Layout
+   1.Layout
    -------------------------------------- */
- #features {
+#features {
 	 	text-align: justify;
 		margin-top: 20px;
-	 }
+	}
+
+#features img {
+  margin: 0 0 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+#features{
+  text-align: center;
+  }
 
 #insights,#store{
   padding-right: 0px;
@@ -25,9 +41,9 @@ Notes:	 Hand coded for Udemy.com
 
 footer {
 	background-color: #c0c0c0;
-	font-size: 11px;
 	padding: 20px;
 	margin-top: 20px;
+  font-size: 13px;
 }
 
 .portfolio_padding{
@@ -38,7 +54,11 @@ footer a{
 	color: black;
 }
 /* --------------------------------------
-   Typography
+  End of layout
+   -------------------------------------- */
+
+/* --------------------------------------
+  2.Typography
    -------------------------------------- */
 
 body {
@@ -64,119 +84,137 @@ ul.unstyled {
 	padding: 0;
 }
 
-
+footer h6{
+  font-size: 16px;
+}
 /* --------------------------------------
-   Navbar
+  End of Typography
    -------------------------------------- */
 
+/* --------------------------------------
+   3.Navbar
+   -------------------------------------- */
 
 .navbar-brand {
 	padding: 0px;
 	padding-top: 5px;
 }
+/* --------------------------------------
+ End of Navar
+   -------------------------------------- */
 
 
 /* --------------------------------------
-   Carousel
+   4.Carousel
    -------------------------------------- */
 
-	 #myCarousel {
-	 	margin-top: 60px;
-	 }
+#myCarousel {
+ 	margin-top: 60px;
+}
 
-	#myCarousel .item { height: 400px; }
+#myCarousel .item {
+  height: 400px;
+}
 
-	#slide1 {
-		background: url('../../images/carousel_medium_01.jpg') top center no-repeat;
-	}
+#slide1 {
+	background: url('../../images/carousel_medium_01.jpg') top center no-repeat;
+}
 
-	#slide2 {
-		background: url('../../images/carousel_medium_02.jpg') top center no-repeat;
-	}
+#slide2 {
+	background: url('../../images/carousel_medium_02.jpg') top center no-repeat;
+}
 
-	#slide3 {
-		background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
-	}
+#slide3 {
+	background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
+}
 
-
+#myCarousel.stick{
+  margin-top: 20px;
+}
 
 /* --------------------------------------
-   Global Styles
+   End of Carousel Styles
    -------------------------------------- */
-  .alert {
-   	margin-top: 20px;
-   	display: none;
-  }
+
+/* --------------------------------------
+   5.Global Styles
+   -------------------------------------- */
+
+.alert {
+ 	margin-top: 80px;
+ 	display: none;
+}
 
 .well {
-	 	margin: 20px 0;
-	 }
-
-#features img {
-
-		margin: 0 0 20px;
-		border-radius: 10px;
-		border: 1px solid black;
+ 	margin: 20px 0;
 }
-
-#features{
-  margin-top: 80px;
-  text-align: center;
-}
-
 
 /* --------------------------------------
-   Media Queries
+   End of Global Styles
+   -------------------------------------- */
+
+/* --------------------------------------
+  6.Media Queries
    -------------------------------------- */
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-
-
 
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
-	#myCarousel .item { height: 310px; }
+#myCarousel .item {
+  height: 310px;
+}
 
-	#slide1 {
-		background: url('../../images/carousel_small_01.jpg') top center no-repeat;
-	}
+#slide1 {
+	background: url('../../images/carousel_small_01.jpg') top center no-repeat;
+}
 
-	#slide2 {
-		background: url('../../images/carousel_small_02.jpg') top center no-repeat;
-	}
+#slide2 {
+	background: url('../../images/carousel_small_02.jpg') top center no-repeat;
+}
 
-	#slide3 {
-		background: url('../../images/carousel_small_03.jpg') top center no-repeat;
-	}
-
-
-
+#slide3 {
+	background: url('../../images/carousel_small_03.jpg') top center no-repeat;
+}
 
 }
 
 /* Large desktop */
 @media (min-width: 1200px) {
 
-	#myCarousel .item { height: 500px; }
+#myCarousel .item {
+  height: 500px;
+ }
 
-	#slide1 {
-		background: url('../../images/carousel_large_01.jpg') top center no-repeat;
-	}
+#slide1 {
+	background: url('../../images/carousel_large_01.jpg') top center no-repeat;
+}
 
-	#slide2 {
-		background: url('../../images/carousel_large_02.jpg') top center no-repeat;
-	}
+#slide2 {
+	background: url('../../images/carousel_large_02.jpg') top center no-repeat;
+}
 
-	#slide3 {
-		background: url('../../images/carousel_large_03.jpg') top center no-repeat;
-	}
+#slide3 {
+  background: url('../../images/carousel_large_03.jpg') top center no-repeat;
+}
 
-
-
-
+#moredetails{
+  height: 500px;
+}
 
 }
+
+@media (max-width :1199px) and (min-width :768px) {
+
+#moredetails{
+  height: 400px;
+}
+
+
+/* --------------------------------------
+  End of Media Queries
+   -------------------------------------- */

@@ -132,14 +132,6 @@
 								<h4 class="modal-title">Registration Form</h4>
 							</div><!-- end modal-header -->
 
-							<div class="alert alert-success alert-block fade in" id="successAlert">
-								<button type="button" class="close" data-dismiss="alert">&times;</button>
-
-								<h4>Success!</h4>
-								<p>You have successfully Registered with EXANS. Now you can Login</p>
-
-							</div><!-- end alert -->
-
 							<div class="modal-body">
 								<form class="form-horizontal">
 									<div class="form-group">
@@ -178,11 +170,18 @@
 
 							<div class="modal-footer">
 								<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
-								<button class="btn btn-primary" id="alertMe" type="button">Register</button>
+								<button class="btn btn-primary" data-dismiss="modal" id="alertMe" type="button">Register</button>
 							</div><!-- end modal-footer -->
 						</div><!-- end modal-content -->
 					</div><!-- end modal-dialog -->
 				</div><!-- end registermodal -->
+
+				<div class="alert alert-success alert-block fade in" id="successAlert">
+					<button type="button" class="close"  id="closeAlert">&times;</button>
+					<h4>Success!</h4>
+					<p>You have successfully Registered with EXANS. Now you can Login</p>
+
+				</div><!-- end alert -->
 
 				<div class="carousel slide" id="myCarousel">
 
@@ -214,7 +213,16 @@
 				<div class="row" id="aboutus">
 					<div class="col-12">
 						<h2>About Us</h2>
-						<p id="aboutcontent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p id="aboutcontent">We are Exclusive ANSYS Training and Consulting Services Company
+							started in 2015 by a group of experienced professionals.We specialize in core Concept modelling to Design Validation, Design Optimisation and product
+							development using the most powerful CAE tools in the industry. ANSYS Mechanical for
+							Structural Mechanics and ANSYS CFX, ANSYS Fluent for Fluid dynamics solutions.
+							We have ventured into Educational support and services for colleges and universities all
+							over INDIA to provide the most quality and cost efficient training and services programs.
+							These trainings would be done by experienced Industry Professionals across domains.</p>
+
+
+
 				</div><!-- end col-12 -->
 				</div><!-- end featuresHeading -->
 
@@ -225,7 +233,7 @@
 							<div class="panel-heading">
 									<h3 class="panel-title">WHO WE ARE</h3>
 							</div><!-- end panel-heading -->
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Team of Experienced Industry professionals. Consulting and Training with E-learning and Classroom learning Expertise in Global Corporate.</p>
 						</div><!-- end panel -->
 					</div><!-- end feature -->
 
@@ -234,7 +242,7 @@
 							<div class="panel-heading">
 									<h3 class="panel-title">OUR MISSION</h3>
 							</div><!-- end panel-heading -->
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>To be the most 'Reliable Partner' for you to grow with. To be a Leading Ansys Consultant and Trainer for Corporates and Educational Institutes.</p>
 						</div><!-- end panel -->
 					</div><!-- end feature -->
 
@@ -243,7 +251,7 @@
 							<div class="panel-heading">
 									<h3 class="panel-title">SERVICES</h3>
 							</div><!-- end panel-heading -->
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<p>We provide Ansys Consulting Services, Corporate Ansys Training Program, CAE Staffing Services and Academic Projects for B.E,M.E and Ph.D </p>
 						</div><!-- end panel -->
 					</div><!-- end feature -->
 				</div><!-- end features -->
@@ -257,19 +265,18 @@
 							</div><!-- end page-header -->
 							<p class="lead">Want to learn the new releases of ACT Customization of ANSYS?? Register with us and get a sample course for free.</p>
 							<a href="" class="btn btn-large btn-primary">Register Now</a>
-							<a href="" class="btn btn-large btn-link">or will do later</a>
 						</div><!-- end well -->
 
 					</div><!-- end col-12 -->
 				</div><!-- end bigCallout -->
 
-				<div class="row" id="insights">
-					<div class="col-12">
-						<h3>More Details on Tab</h3>
+				<div class="row">
+					<div class="col-12" id="moredetails">
+						<h3>Latest News</h3>
 						<div class="tabbable">
 							<ul class="nav nav-tabs">
-								<li class="active"><a href="#tab1" data-toggle="tab">Insights</a></li>
-								<li><a href="#tab2" data-toggle="tab">Store</a></li>
+								<li class="active"><a href="#tab1" data-toggle="tab">Ferrari</a></li>
+								<li><a href="#tab2" data-toggle="tab">Explicits</a></li>
 							</ul>
 							<div class="tab-content">
 								<div class="tab-pane active" id="tab1">
@@ -279,17 +286,13 @@
 											</div>
 									</div>
 									<div class="col-lg-7 col-sm-6">
-											<h3>OUR BUSINESS SO FAR</h3>
+											<h3>FERRARI TAKES A VICTORY LAP</h3>
 											<p>
-												This graph will show in which all fields we have been successful. This
-												This line is added so	that the description becomes more that 2 lines.This
-												line is added so	that the description becomes more that 2 lines.
-												<br>
-												<br>
-												This is the second paragraph of the insights section. This line is added
-												so that the description becomes more that 2 lines.	This line is added
-												so that the description becomes more that 2 lines. This graph will show
-												in which all fields we have been successful.
+												Using ANSYS simulation technology, Ferrari is realizing its product 
+												promise by optimizing critical aspects of its race cars, like brake 
+												cooling systems and full-body aerodynamics, to better handle the twists
+												and turns of the racing world.
+												Sounds like Ferrari is in the driver's seat.
 											</p>
 										</div>
 
@@ -297,22 +300,20 @@
 
 								<div class="tab-pane" id="tab2">
 									<div class="col-lg-8 col-sm-6">
-										<h3>ADVANCED STORE</h3>
+										<h3>Using Explicit Simulations to Go Further</h3>
 										<p>
-											This graph will show in which all fields we have been successful. This
-											This line is added so	that the description becomes more that 2 lines.This
-											line is added so	that the description becomes more that 2 lines.
-											<br>
-											<br>
-											This is the second paragraph of the insights section. This line is added
-											so that the description becomes more that 2 lines.	This line is added
-											so that the description becomes more that 2 lines.
+											Highly non-linear simulations can be difficult to converge
+											using the implicit simulation tools. The implicit route can
+											involve several restarts trying different settings each time.
+											Another methodology is available for these non-linear simulations
+											that is explicit dynamics. Explicit dynamics can be used to
+											simulate anything from quasi-static simulations to hypervelocity impacts.
 										</p>
 									</div>
 									<!---ADVANCED STORE IMAGE------------------------>
 									<div class="col-lg-4 col-sm-6"  id="store">
 											<div class="thumbnail">
-												<img src="images/store.jpg" alt="store"/>
+												<img src="images/store.gif" alt="store"/>
 											</div>
 									</div>
 

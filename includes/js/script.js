@@ -16,9 +16,16 @@ $(function() {
 		e.preventDefault();
 
 		$('#successAlert').slideDown();
+		$('#myCarousel').addClass('stick');
 
 	});
 
-	
+	$('#closeAlert').click(function(e) {
+
+		$('#successAlert').hide();
+
+		$('#myCarousel').removeClass('stick');
+
+	});
 
 });
