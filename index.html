@@ -76,10 +76,10 @@
 
 							<ul class="nav navbar-nav pull-right">
 								<li>
-									<a href="#myModal" role="button" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Login</a>
+									<a href="#loginmodal" role="button" data-toggle="modal"><span class="glyphicon glyphicon-user"></span> Login</a>
 								</li>
 								<li>
-									<a href="#">Contact Us</a>
+									<a href="#registermodal" role="button" data-toggle="modal"><span class="glyphicon glyphicon-pencil"></span> Register</a>
 								</li>
 							</ul><!-- end nav pull-right -->
 
@@ -88,7 +88,7 @@
 					</div><!-- end container -->
 				</div><!-- end navbar -->
 
-				<div class="modal fade" id="myModal">
+				<div class="modal fade" id="loginmodal">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
@@ -97,8 +97,6 @@
 								<h4 class="modal-title"><span class="glyphicon glyphicon-user"></span> Login</h4>
 							</div><!-- end modal-header -->
 							<div class="modal-body">
-
-								<p><small class="text-muted">PS. This form doesn't do anything. Just a heads up.</small></p>
 
 								<form class="form-horizontal">
 									<div class="form-group">
@@ -123,7 +121,68 @@
 							</div><!-- end modal-footer -->
 						</div><!-- end modal-content -->
 					</div><!-- end modal-dialog -->
-				</div><!-- end myModal -->
+				</div><!-- end modallogin -->
+
+				<div class="modal fade" id="registermodal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button class="close" data-dismiss="modal">&times;</button>
+
+								<h4 class="modal-title">Registration Form</h4>
+							</div><!-- end modal-header -->
+
+							<div class="alert alert-success alert-block fade in" id="successAlert">
+								<button type="button" class="close" data-dismiss="alert">&times;</button>
+
+								<h4>Success!</h4>
+								<p>You have successfully Registered with EXANS. Now you can Login</p>
+
+							</div><!-- end alert -->
+
+							<div class="modal-body">
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label class="col-lg-2 control-label" for="inputName">Name</label>
+										<div class="col-lg-10">
+											<input class="form-control" id="inputName" placeholder="Name" type="text">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+										<div class="col-lg-10">
+											<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-lg-2 control-label" for="inputPassword">Password</label>
+										<div class="col-lg-10">
+												<input class="form-control" id="inputPassword" placeholder="Password" type="password">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-lg-2 control-label" for="inputCPassword"></label>
+										<div class="col-lg-10">
+												<input class="form-control" id="inputCPassword" placeholder="Confirm Password" type="password">
+										</div>
+									</div>
+
+								</form>
+
+
+
+							</div><!-- end modal-body -->
+
+							<div class="modal-footer">
+								<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+								<button class="btn btn-primary" id="alertMe" type="button">Register</button>
+							</div><!-- end modal-footer -->
+						</div><!-- end modal-content -->
+					</div><!-- end modal-dialog -->
+				</div><!-- end registermodal -->
 
 				<div class="carousel slide" id="myCarousel">
 
@@ -164,32 +223,27 @@
 					<div class="col-sm-4 feature">
 						<div class="panel">
 							<div class="panel-heading">
-								<h3 class="panel-title">WHO WE ARE</h3>
+									<h3 class="panel-title">WHO WE ARE</h3>
 							</div><!-- end panel-heading -->
-
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-							</div><!-- end panel -->
-					</div><!-- end feature -->
-
-					<div class="col-sm-4 feature">
-						<div class="panel">
-							<div class="panel-heading">
-								<h3 class="panel-title">OUR MISSION</h3>
-							</div><!-- end panel-heading -->
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
 						</div><!-- end panel -->
 					</div><!-- end feature -->
 
 					<div class="col-sm-4 feature">
 						<div class="panel">
 							<div class="panel-heading">
-								<h3 class="panel-title">SERVICES</h3>
+									<h3 class="panel-title">OUR MISSION</h3>
 							</div><!-- end panel-heading -->
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div><!-- end panel -->
+					</div><!-- end feature -->
 
+					<div class="col-sm-4 feature">
+						<div class="panel">
+							<div class="panel-heading">
+									<h3 class="panel-title">SERVICES</h3>
+							</div><!-- end panel-heading -->
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div><!-- end panel -->
 					</div><!-- end feature -->
 				</div><!-- end features -->
@@ -201,9 +255,7 @@
 							<div class="page-header">
 								<h1>ACT <small>A new customization tool</small></h1>
 							</div><!-- end page-header -->
-
 							<p class="lead">Want to learn the new releases of ACT Customization of ANSYS?? Register with us and get a sample course for free.</p>
-
 							<a href="" class="btn btn-large btn-primary">Register Now</a>
 							<a href="" class="btn btn-large btn-link">or will do later</a>
 						</div><!-- end well -->

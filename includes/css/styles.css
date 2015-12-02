@@ -18,12 +18,9 @@ Notes:	 Hand coded for Udemy.com
 		margin-top: 20px;
 	 }
 
-#insights{
+#insights,#store{
+  padding-right: 0px;
 	padding-left: 0px;
-}
-
-#store{
-	padding-right: 0px;
 }
 
 footer {
@@ -106,19 +103,25 @@ ul.unstyled {
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
+  .alert {
+   	margin-top: 20px;
+   	display: none;
+  }
+
 .well {
 	 	margin: 20px 0;
 	 }
 
-#features img,#features2 img,#features3 img {
+#features img {
 
 		margin: 0 0 20px;
 		border-radius: 10px;
 		border: 1px solid black;
 }
 
-#features,#features2,#features3 {
-	text-align: center;
+#features{
+  margin-top: 80px;
+  text-align: center;
 }
 
 
